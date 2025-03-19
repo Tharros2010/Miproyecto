@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d4d4d4;
+    border: 2px solid #5a5a5a;
+    font-size: 15px;
+    width: 800px;
+    padding-bottom: 10%;
+}
+p {
+    font-size: 20px;
+}
+input {
+    font-size: 20px;
+}
+#inicio {
+    width: 85%;
+    height: 48px;
+    color: #ffffff;
+    background-color: hsl(310, 100%, 65%); 
+}
+a {
+    color: hsl(310, 100%, 65%); 
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Registro</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Inicia sesion</h1>
+        <p>Correo Electronico</p>
+        <input type="email" placeholder="Ejemplo@gmail.com" id="email">
+        <br>
+        <p>Ingresa tu clave</p>
+        <input type="password" id="password">
+        <br>
+        <label><input type="checkbox" name="Recordatorio" id="checkbox" />Recordarme</label>
+        <br>
+        <br>
+        <a href="contraseña">¿olvido su contraseña?</a>
+        <br>
+        <br>
+        <button id="inicio" onclick="boton()">Iniciar</button>
+        <p id="message"></p>
+        <br>
+        <p>¿No tienes cuenta? <a href="nose">Crea una aqui</a></p>
+    </div>
+    <script>
+        function boton() {
+            document.getElementById("message").innerHTML = "Sesion iniciada con exito";
+        }
+    </script>
+</body>
+</html>
